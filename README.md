@@ -1,0 +1,1 @@
+On this project we will copy google's homepage to improve my html and css skills.
