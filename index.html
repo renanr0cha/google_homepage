@@ -1,116 +1,50 @@
 
-
 <!DOCTYPE html>
-<style>
-
-    body {
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    a {
-        text-decoration: none;
-        color: #5f6368;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-
-    span {
-        color: #5f6368;
-    }
-
-
-    #icon-apps {
-        height: 23px;
-        width: 23px;
-    }
-
-    header {
-        float: right;
-        list-style-type: none;
-        padding-left: 20px;
-        font-size: 13px;
-        height: 30px;
-        
-    }
-
-    div.footer {
-        background-color: #f2f2f2;
-        border-top: 1px solid #e4e4e4;
-        margin-bottom: auto;
-        margin-top: auto;
-        line-height: 25px;
-        height: 81.5px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-    
-    footer {
-        padding-left: 27px;
-        font-size: 13px;
-    }
-    li {
-        display: inline;
-        padding-left: 27px;
-        height: 30px;
-    }
-    #search-bar {
-    padding: 3px 5px 5px 3px;
-    margin-left: 400px;margin-right: 400px;margin-top: 20px;margin-bottom: 40px;
-}
-    #text {
-        height: 40px;width: 400px;border-left-style: solid;
-    }
-
-
-</style>
-
-<head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://www.google.com/s2/favicons?domain=google.com.br">
     <title>Google</title>
-    
-</head>
-
-<body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <ul>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href=""><img id="icon-apps" src="https://icon-library.net//images/google-apps-icon-png/google-apps-icon-png-27.jpg"></a></li>
-                <li><a href=""><input type="button" value="Sign in" style="background-color: #4387fd; color:seashell" ></a></li>
-        </ul>
-
+      <p>Gmail</p>
+      <p>Imagens</p>
+      <i class="material-icons md-dark md-grey">apps</i>
+      <button>Fazer login</button>
     </header>
-    <br>
-    <div class="img-container">
-    <img id="logo-google" src="https://www.google.com/logos/2019/father2019/initial.png" style="margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 0px;
-    display: block;">
+    <img alt="Google" src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div id="search-box">
+      <i class="material-icons md-dark md-inactive md-20">search</i>
+      <form>
+        <input type="text">
+      </form>
+      <i class="material-icons md-dark md-grey md-20">keyboard</i>
+      <i class="material-icons md-20">mic</i>
     </div>
-    <br>
-    <div style="text-align: center">
-    <form id="search-bar">
-        <input id="text" type="text" style="margin-bottom: 20px">
-        <input id="search-button" type="button" value="Google Search" onclick="No results found!">
-        <input id="lucky-button" type="button" value="I'm Felling Lucky" onclick="Indeed you are!">
-
-    </form>
-    </div>  
+    <div class="search-buttons">
+      <button>Pesquisa Google</button>
+      <button>Estou com sorte</button>
+    </div>
     <footer>
-        <div class="footer">
-            <ul id="footer">
-                <li><a href="">Brazil</a></li>
-                <br>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">How Search Works</a></li>
-                <li><a href="" style="float: right; padding-left: 27px; padding-right: 27px">Settings</a></li>
-                <li><a href="" style="float: right; padding-left: 27px">Terms</a></li>
-                <li><a href="" style="float: right; padding-left: 27px">Privacy</a></li>
-            </ul>
+      <div class="footer-line">
+        <p id="brazil-text">Brasil</p>
+      </div>
+      <div class="footer-line">
+        <div id="left-footer-line">
+          <p>Publicidade</p>
+          <p>Negócios</p>
+          <p>Sobre</p>
+          <p>Como funciona a Pesquisa</p>
         </div>
+        <div id="right-footer-line">
+          <p>Privacidade</p>
+          <p>Termos</p>
+          <p>Configurações</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
