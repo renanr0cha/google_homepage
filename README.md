@@ -1,1 +1,3 @@
-On this project we will copy google's homepage to improve my html and css skills.
+# Google.com clone
+
+On this project I remade the main Google.com page from scratch, with only html and css.
